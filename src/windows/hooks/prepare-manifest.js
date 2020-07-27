@@ -2,7 +2,7 @@ module.exports = function(context) {
     var fs = require('fs'),
         et = require('elementtree'),
         path = require('path'),
-        xml= context.requireCordovaModule('cordova-common').xmlHelpers,
+        xml= context.require('cordova-common').xmlHelpers,
         projectRoot = path.join(context.opts.projectRoot, "platforms", "windows");
 
     var MANIFEST_WINDOWS    = 'package.windows.appxmanifest',
